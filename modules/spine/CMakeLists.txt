@@ -1,0 +1,77 @@
+include_directories(./include)
+#将所有的源文件列为一个集合，集合名字叫做SRC_LISTS
+set(SPINE_SOURCES                   
+    ./src/Animation.cpp
+    ./src/AnimationState.cpp
+    ./src/AnimationStateData.cpp
+    ./src/AtlasAttachmentLoader.cpp
+    ./src/Atlas.cpp
+    ./src/Attachment.cpp
+    ./src/AttachmentLoader.cpp
+    ./src/AttachmentTimeline.cpp
+    ./src/Bone.cpp
+    ./src/BoneData.cpp
+    ./src/BoundingBoxAttachment.cpp
+    ./src/ClippingAttachment.cpp
+    ./src/ColorTimeline.cpp
+    ./src/ConstraintData.cpp
+    ./src/CurveTimeline.cpp
+    ./src/DeformTimeline.cpp
+    ./src/DrawOrderTimeline.cpp
+    ./src/Event.cpp
+    ./src/EventData.cpp
+    ./src/EventTimeline.cpp
+    ./src/Extension.cpp
+    ./src/IkConstraint.cpp
+    ./src/IkConstraintData.cpp
+    ./src/IkConstraintTimeline.cpp
+    ./src/InheritTimeline.cpp
+    ./src/Json.cpp
+    ./src/LinkedMesh.cpp
+    ./src/Log.cpp
+    ./src/MathUtil.cpp
+    ./src/MeshAttachment.cpp
+    ./src/PathAttachment.cpp
+    ./src/PathConstraint.cpp
+    ./src/PathConstraintData.cpp
+    ./src/PathConstraintMixTimeline.cpp
+    ./src/PathConstraintPositionTimeline.cpp
+    ./src/PathConstraintSpacingTimeline.cpp
+    ./src/PhysicsConstraint.cpp
+    ./src/PhysicsConstraintData.cpp
+    ./src/PhysicsConstraintTimeline.cpp
+    ./src/PointAttachment.cpp
+    ./src/RegionAttachment.cpp
+    ./src/RotateTimeline.cpp
+    ./src/RTTI.cpp
+    ./src/ScaleTimeline.cpp
+    ./src/Sequence.cpp
+    ./src/SequenceTimeline.cpp
+    ./src/ShearTimeline.cpp
+    ./src/SkeletonBinary.cpp
+    ./src/SkeletonBounds.cpp
+    ./src/SkeletonClipping.cpp
+    ./src/Skeleton.cpp
+    ./src/SkeletonData.cpp
+    ./src/SkeletonJson.cpp
+    ./src/Skin.cpp
+    ./src/Slot.cpp
+    ./src/SlotData.cpp
+    ./src/SpineObject.cpp
+    ./src/TextureLoader.cpp
+    ./src/Timeline.cpp
+    ./src/TransformConstraint.cpp
+    ./src/TransformConstraintData.cpp
+    ./src/TransformConstraintTimeline.cpp
+    ./src/TranslateTimeline.cpp
+    ./src/Triangulator.cpp
+    ./src/Updatable.cpp
+    ./src/VertexAttachment.cpp
+)
+
+if(BUILD_SHARED_LIBS)
+  add_library(spine SHARED ${SPINE_SOURCES})
+else()
+  add_library(spine STATIC ${SPINE_SOURCES})
+endif()
+target_include_directories(spine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

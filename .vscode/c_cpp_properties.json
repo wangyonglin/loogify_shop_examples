@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "c_cpp_properties.json",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/examples/include/*",
+                "${workspaceFolder}/modules/spine/include/*"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}
