@@ -4,7 +4,7 @@
             "name": "c_cpp_properties.json",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/examples/include/*",
+                "${workspaceFolder}/examples/ffmpeg_player_example/include/*",
                 "${workspaceFolder}/modules/spine/include/*"
             ],
             "defines": [],

@@ -1,1 +1,2 @@
 add_subdirectory(spine_example)
+add_subdirectory(ffmpeg_player_example)
