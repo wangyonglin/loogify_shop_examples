@@ -8,4 +8,5 @@
 ```
 
 #### 程序运行效果 要进入程序目录运行程序不然加载不到 data 目录下的资源文件　./spine_example
-![](https://github.com/wangyonglin/loogify_shop_examples/raw/main/doc/images/spine_sample.png)
+
+![spine_sample.png](./doc/images/spine_sample.png)
